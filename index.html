@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Homepage | Ferrari F430</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./Assets/img/schools.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+  </head>
+  <body
+    style="
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    "
+  >
+    <header
+      style="
+        background-color: #980000;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        color: white;
+        justify-content: space-between;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding: 15px;
+      "
+    >
+      <!-- Logo -->
+      <div style="display: flex; flex-direction: row">
+        <div
+          style="
+            font-size: 24px;
+            padding: 10px;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            margin: auto;
+          "
+        >
+          Ferrari F430
+        </div>
+      </div>
+      <div id="buttonGroup" style="display: flex">
+        <a href="./appassionati.html">
+          <button title="Per appassionati">
+            <span class="material-symbols-outlined"> star </span>
+          </button>
+        </a>
+        <button title="Componentistica">
+          <span class="material-symbols-outlined">
+            precision_manufacturing
+          </span>
+        </button>
+        <button onclick="scrollToFooter()" title="Contatti">
+          <span class="material-symbols-outlined"> contacts_product </span>
+        </button>
+      </div>
+    </header>
+    <section>
+
+    </section>
+    <div
+      id="Presentation"
+      style="background-color: lightgrey; padding: 20px; text-align: center"
+    >
+      <h2
+        style="
+          font-size: 30px;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: #333;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          margin: 0px;
+        "
+      >
+        SCOPRI LA FERRARI F430
+      </h2>
+      <p
+        style="
+          font-size: 18px;
+          line-height: 1.6;
+          color: #555555;
+          font-style: italic;
+        "
+      >
+        Il cuore della Ferrari F430, il motore F136E, è un V8 di 90° con
+        monoblocco e testate in lega di alluminio. Questa unità, rispetto al
+        predecessore montato sulla Ferrari 360, offre notevoli miglioramenti:
+        una cilindrata maggiorata a 4308 cc, un peso ridotto di circa 4 kg e
+        prestazioni notevolmente migliorate. <br />
+        <br />
+        La coppia aumenta del 25% a 465 Nm a 5250 giri/min, mentre la potenza
+        sale del 23% a 490 CV a 8500 giri/min. La distribuzione a 4 valvole per
+        cilindro con doppio albero a camme in testa per bancata è allineata alle
+        recenti scelte tecniche.
+      </p>
+      <img
+        src="./Assets/img/foto3.webp"
+        alt="Immagine"
+        style="
+          max-width: 100%;
+          height: auto;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      />
+    </div>
+
+    <main style="padding: 20px">
+      <div class="foto-container">
+        <!-- Descrizione prodotto -->
+        <div
+          class="group-card"
+          onclick="toggleDescription('description1')"
+          style="
+            cursor: pointer;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+          "
+        >
+          <img
+            src="./Assets/img/Sistema_di_aspirazione.jpg"
+            alt="Foto Ferrari 1"
+            width="100%"
+            style="border-radius: 15px 15px 0 0"
+            id="sistemaspirazione"
+          />
+          <div style="padding: 20px">
+            <h2 style="margin: 0 0 10px">Sistema di Aspirazione</h2>
+            <div
+              id="description1"
+              style="
+                height: 0;
+                overflow: hidden;
+                transition: height 0.5s ease;
+                margin-bottom: 20px;
+              "
+            >
+              <hr style="margin-top: 2px" />
+              <p style="font-size: 16px; margin: 0; line-height: 1.6">
+                L’aspirazione è la parte del motore incaricata a far entrare la
+                miscela, aria-carburante, all'interno della camera di
+                combustione. All'inizio dell’aspirazione si trova la valvola a
+                farfalla elettronica, che ha il compito di regolare la quantità
+                di aria che entra nel motore. Più la valvola è aperta e più aria
+                entra nel motore, di conseguenza il numero di giri aumenta. Il
+                controllo della valvola a farfalla parte da un sensore montato
+                sul pedale dell'acceleratore, che comunica alla centralina
+                quanto è premuto, successivamente la centralina regola
+                l’attuatore della valvola a farfalla (nel motore F430 sono
+                presenti 2 valvole a farfalla elettroniche). Una volta che
+                l’aria è stata regolata dalla valvola, entra nel collettore
+                d'aspirazione dove alla fine di esso si trova l'iniettore, (nel
+                motore F430 sono presenti 2 collettori di aspirazione, uno per
+                bancata, che possono venire uniti da un polmone a depressione.
+                Gli iniettori sono 8, uno per cilindro).
+              </p>
+            </div>
+            <button
+              style="
+                background-color: #980000;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                font-weight: 600;
+              "
+            >
+              Scopri di più
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- SECONDA FOTO -->
+      <div class="foto-container">
+        <!-- Descrizione prodotto -->
+        <div
+          class="group-card"
+          onclick="toggleDescription('description2')"
+          style="
+            cursor: pointer;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+          "
+        >
+          <img
+            src="./Assets/img/Sistema_common_rail.jpg"
+            alt="Foto Ferrari 1"
+            width="100%"
+            style="border-radius: 15px 15px 0 0"
+            id="sistemacommonrail"
+          />
+          <div style="padding: 20px">
+            <h2 style="margin: 0 0 10px">Sistema common rail</h2>
+            <div
+              id="description2"
+              style="
+                height: 0;
+                overflow: hidden;
+                transition: height 0.5s ease;
+                margin-bottom: 20px;
+              "
+            >
+              <hr style="margin-top: 2px" />
+              <p style="font-size: 16px; margin: 0; line-height: 1.6">
+                L’aspirazione è la parte del motore incaricata a far entrare la
+                miscela, aria-carburante, all'interno della camera di
+                combustione. All'inizio dell’aspirazione si trova la valvola a
+                farfalla elettronica, che ha il compito di regolare la quantità
+                di aria che entra nel motore. Più la valvola è aperta e più aria
+                entra nel motore, di conseguenza il numero di giri aumenta. Il
+                controllo della valvola a farfalla parte da un sensore montato
+                sul pedale dell'acceleratore, che comunica alla centralina
+                quanto è premuto, successivamente la centralina regola
+                l’attuatore della valvola a farfalla (nel motore F430 sono
+                presenti 2 valvole a farfalla elettroniche). Una volta che
+                l’aria è stata regolata dalla valvola, entra nel collettore
+                d'aspirazione dove alla fine di esso si trova l'iniettore, (nel
+                motore F430 sono presenti 2 collettori di aspirazione, uno per
+                bancata, che possono venire uniti da un polmone a depressione.
+                Gli iniettori sono 8, uno per cilindro).
+              </p>
+            </div>
+            <button
+              style="
+                background-color: #980000;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                font-weight: 600;
+              "
+            >
+              Scopri di più
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="foto-container">
+        <!-- Descrizione prodotto -->
+        <div
+          class="group-card"
+          onclick="toggleDescription('description3')"
+          style="
+            cursor: pointer;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+          "
+        >
+          <img
+            src="./Assets/img/Attuatore_gruppo_farfallato.jpg"
+            alt="Foto Ferrari 1"
+            width="100%"
+            style="border-radius: 15px 15px 0 0"
+            id="attuatoregruppofarfallato"
+          />
+          <div style="padding: 20px">
+            <h2 style="margin: 0 0 10px">Attuatore gruppo farfallato</h2>
+            <div
+              id="description3"
+              style="
+                height: 0;
+                overflow: hidden;
+                transition: height 0.5s ease;
+                margin-bottom: 20px;
+              "
+            >
+              <hr style="margin-top: 2px" />
+              <p style="font-size: 16px; margin: 0; line-height: 1.6">
+                L’aspirazione è la parte del motore incaricata a far entrare la
+                miscela, aria-carburante, all'interno della camera di
+                combustione. All'inizio dell’aspirazione si trova la valvola a
+                farfalla elettronica, che ha il compito di regolare la quantità
+                di aria che entra nel motore. Più la valvola è aperta e più aria
+                entra nel motore, di conseguenza il numero di giri aumenta. Il
+                controllo della valvola a farfalla parte da un sensore montato
+                sul pedale dell'acceleratore, che comunica alla centralina
+                quanto è premuto, successivamente la centralina regola
+                l’attuatore della valvola a farfalla (nel motore F430 sono
+                presenti 2 valvole a farfalla elettroniche). Una volta che
+                l’aria è stata regolata dalla valvola, entra nel collettore
+                d'aspirazione dove alla fine di esso si trova l'iniettore, (nel
+                motore F430 sono presenti 2 collettori di aspirazione, uno per
+                bancata, che possono venire uniti da un polmone a depressione.
+                Gli iniettori sono 8, uno per cilindro).
+              </p>
+            </div>
+            <button
+              style="
+                background-color: #980000;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                font-weight: 600;
+              "
+            >
+              Scopri di più
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------->
+      <div class="foto-container">
+        <!-- Descrizione prodotto -->
+        <div
+          class="group-card"
+          onclick="toggleDescription('description4')"
+          style="
+            cursor: pointer;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+          "
+        >
+          <img
+            src="./Assets/img/Scambiatori_di_calore.jpg"
+            alt="Foto Ferrari 1"
+            width="100%"
+            style="border-radius: 15px 15px 0 0"
+            id="scambiatoridicalore"
+          />
+          <div style="padding: 20px">
+            <h2 style="margin: 0 0 10px">Scambiatori di calore</h2>
+            <div
+              id="description4"
+              style="
+                height: 0;
+                overflow: hidden;
+                transition: height 0.5s ease;
+                margin-bottom: 20px;
+              "
+            >
+              <hr style="margin-top: 2px" />
+              <p style="font-size: 16px; margin: 0; line-height: 1.6">
+                L’aspirazione è la parte del motore incaricata a far entrare la
+                miscela, aria-carburante, all'interno della camera di
+                combustione. All'inizio dell’aspirazione si trova la valvola a
+                farfalla elettronica, che ha il compito di regolare la quantità
+                di aria che entra nel motore. Più la valvola è aperta e più aria
+                entra nel motore, di conseguenza il numero di giri aumenta. Il
+                controllo della valvola a farfalla parte da un sensore montato
+                sul pedale dell'acceleratore, che comunica alla centralina
+                quanto è premuto, successivamente la centralina regola
+                l’attuatore della valvola a farfalla (nel motore F430 sono
+                presenti 2 valvole a farfalla elettroniche). Una volta che
+                l’aria è stata regolata dalla valvola, entra nel collettore
+                d'aspirazione dove alla fine di esso si trova l'iniettore, (nel
+                motore F430 sono presenti 2 collettori di aspirazione, uno per
+                bancata, che possono venire uniti da un polmone a depressione.
+                Gli iniettori sono 8, uno per cilindro).
+              </p>
+            </div>
+            <button
+              style="
+                background-color: #980000;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                font-weight: 600;
+              "
+            >
+              Scopri di più
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- -------------------------------->
+      <div class="foto-container">
+        <!-- Descrizione prodotto -->
+        <div
+          class="group-card"
+          onclick="toggleDescription('description5')"
+          style="
+            cursor: pointer;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+          "
+        >
+          <img
+            src="./Assets/img/Valvola_termostatica.jpg"
+            alt="Foto Ferrari 1"
+            width="100%"
+            style="border-radius: 15px 15px 0 0"
+            id="valvolatermostatica"
+          />
+          <div style="padding: 20px">
+            <h2 style="margin: 0 0 10px">Valvola termostatica</h2>
+            <div
+              id="description5"
+              style="
+                height: 0;
+                overflow: hidden;
+                transition: height 0.5s ease;
+                margin-bottom: 20px;
+              "
+            >
+              <hr style="margin-top: 2px" />
+              <p style="font-size: 16px; margin: 0; line-height: 1.6">
+                L’aspirazione è la parte del motore incaricata a far entrare la
+                miscela, aria-carburante, all'interno della camera di
+                combustione. All'inizio dell’aspirazione si trova la valvola a
+                farfalla elettronica, che ha il compito di regolare la quantità
+                di aria che entra nel motore. Più la valvola è aperta e più aria
+                entra nel motore, di conseguenza il numero di giri aumenta. Il
+                controllo della valvola a farfalla parte da un sensore montato
+                sul pedale dell'acceleratore, che comunica alla centralina
+                quanto è premuto, successivamente la centralina regola
+                l’attuatore della valvola a farfalla (nel motore F430 sono
+                presenti 2 valvole a farfalla elettroniche). Una volta che
+                l’aria è stata regolata dalla valvola, entra nel collettore
+                d'aspirazione dove alla fine di esso si trova l'iniettore, (nel
+                motore F430 sono presenti 2 collettori di aspirazione, uno per
+                bancata, che possono venire uniti da un polmone a depressione.
+                Gli iniettori sono 8, uno per cilindro).
+              </p>
+            </div>
+            <button
+              style="
+                background-color: #980000;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                font-weight: 600;
+              "
+            >
+              Scopri di più
+            </button>
+          </div>
+        </div>
+      </div>
+      <!------------------------->
+      <div class="foto-container">
+        <!-- Descrizione prodotto -->
+        <div
+          class="group-card"
+          onclick="toggleDescription('description6')"
+          style="
+            cursor: pointer;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+          "
+        >
+          <img
+            src="./Assets/img/Tendi_catena_idraulici.jpg"
+            alt="Foto Ferrari 1"
+            width="100%"
+            style="border-radius: 15px 15px 0 0"
+            id="tendicatenaidraulici"
+          />
+          <div style="padding: 20px">
+            <h2 style="margin: 0 0 10px">Tendi catena idraulici</h2>
+            <div
+              id="description6"
+              style="
+                height: 0;
+                overflow: hidden;
+                transition: height 0.5s ease;
+                margin-bottom: 20px;
+              "
+            >
+              <hr style="margin-top: 2px" />
+              <p style="font-size: 16px; margin: 0; line-height: 1.6">
+                L’aspirazione è la parte del motore incaricata a far entrare la
+                miscela, aria-carburante, all'interno della camera di
+                combustione. All'inizio dell’aspirazione si trova la valvola a
+                farfalla elettronica, che ha il compito di regolare la quantità
+                di aria che entra nel motore. Più la valvola è aperta e più aria
+                entra nel motore, di conseguenza il numero di giri aumenta. Il
+                controllo della valvola a farfalla parte da un sensore montato
+                sul pedale dell'acceleratore, che comunica alla centralina
+                quanto è premuto, successivamente la centralina regola
+                l’attuatore della valvola a farfalla (nel motore F430 sono
+                presenti 2 valvole a farfalla elettroniche). Una volta che
+                l’aria è stata regolata dalla valvola, entra nel collettore
+                d'aspirazione dove alla fine di esso si trova l'iniettore, (nel
+                motore F430 sono presenti 2 collettori di aspirazione, uno per
+                bancata, che possono venire uniti da un polmone a depressione.
+                Gli iniettori sono 8, uno per cilindro).
+              </p>
+            </div>
+            <button
+              style="
+                background-color: #980000;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                font-weight: 600;
+              "
+            >
+              Scopri di più
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="foto-container">
+        <!-- Descrizione prodotto -->
+        <div
+          class="group-card"
+          onclick="toggleDescription('description7')"
+          style="
+            cursor: pointer;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+          "
+        >
+          <img
+            src="./Assets/img/Sistema_di_lubrificazione.jpg"
+            alt="Foto Ferrari 1"
+            width="100%"
+            style="border-radius: 15px 15px 0 0"
+            id="sistemadilubrificazione"
+          />
+          <div style="padding: 20px">
+            <h2 style="margin: 0 0 10px">Sistema di lubrificazione</h2>
+            <div
+              id="description7"
+              style="
+                height: 0;
+                overflow: hidden;
+                transition: height 0.5s ease;
+                margin-bottom: 20px;
+              "
+            >
+              <hr style="margin-top: 2px" />
+              <p style="font-size: 16px; margin: 0; line-height: 1.6">
+                L’aspirazione è la parte del motore incaricata a far entrare la
+                miscela, aria-carburante, all'interno della camera di
+                combustione. All'inizio dell’aspirazione si trova la valvola a
+                farfalla elettronica, che ha il compito di regolare la quantità
+                di aria che entra nel motore. Più la valvola è aperta e più aria
+                entra nel motore, di conseguenza il numero di giri aumenta. Il
+                controllo della valvola a farfalla parte da un sensore montato
+                sul pedale dell'acceleratore, che comunica alla centralina
+                quanto è premuto, successivamente la centralina regola
+                l’attuatore della valvola a farfalla (nel motore F430 sono
+                presenti 2 valvole a farfalla elettroniche). Una volta che
+                l’aria è stata regolata dalla valvola, entra nel collettore
+                d'aspirazione dove alla fine di esso si trova l'iniettore, (nel
+                motore F430 sono presenti 2 collettori di aspirazione, uno per
+                bancata, che possono venire uniti da un polmone a depressione.
+                Gli iniettori sono 8, uno per cilindro).
+              </p>
+            </div>
+            <button
+              style="
+                background-color: #980000;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                font-weight: 600;
+              "
+            >
+              Scopri di più
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="foto-container">
+        <!-- Descrizione prodotto -->
+        <div
+          class="group-card"
+          onclick="toggleDescription('description8')"
+          style="
+            cursor: pointer;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+          "
+        >
+          <img
+            src="./Assets/img/Variatori_di_fase.jpg"
+            alt="Foto Ferrari 1"
+            width="100%"
+            style="border-radius: 15px 15px 0 0"
+            id="variatoridifase"
+          />
+          <div style="padding: 20px">
+            <h2 style="margin: 0 0 10px">Variatori di fase</h2>
+            <div
+              id="description8"
+              style="
+                height: 0;
+                overflow: hidden;
+                transition: height 0.5s ease;
+                margin-bottom: 20px;
+              "
+            >
+              <hr style="margin-top: 2px" />
+              <p style="font-size: 16px; margin: 0; line-height: 1.6">
+                L’aspirazione è la parte del motore incaricata a far entrare la
+                miscela, aria-carburante, all'interno della camera di
+                combustione. All'inizio dell’aspirazione si trova la valvola a
+                farfalla elettronica, che ha il compito di regolare la quantità
+                di aria che entra nel motore. Più la valvola è aperta e più aria
+                entra nel motore, di conseguenza il numero di giri aumenta. Il
+                controllo della valvola a farfalla parte da un sensore montato
+                sul pedale dell'acceleratore, che comunica alla centralina
+                quanto è premuto, successivamente la centralina regola
+                l’attuatore della valvola a farfalla (nel motore F430 sono
+                presenti 2 valvole a farfalla elettroniche). Una volta che
+                l’aria è stata regolata dalla valvola, entra nel collettore
+                d'aspirazione dove alla fine di esso si trova l'iniettore, (nel
+                motore F430 sono presenti 2 collettori di aspirazione, uno per
+                bancata, che possono venire uniti da un polmone a depressione.
+                Gli iniettori sono 8, uno per cilindro).
+              </p>
+            </div>
+            <button
+              style="
+                background-color: #980000;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                font-weight: 600;
+              "
+            >
+              Scopri di più
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="foto-container">
+        <!-- Descrizione prodotto -->
+        <div
+          class="group-card"
+          onclick="toggleDescription('description9')"
+          style="
+            cursor: pointer;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+          "
+        >
+          <img
+            src="./Assets/img/Sensore_di_fase.jpg"
+            alt="Foto Ferrari 1"
+            width="100%"
+            style="border-radius: 15px 15px 0 0"
+            id="sensoredifase"
+          />
+          <div style="padding: 20px">
+            <h2 style="margin: 0 0 10px">Sensore di fase</h2>
+            <div
+              id="description9"
+              style="
+                height: 0;
+                overflow: hidden;
+                transition: height 0.5s ease;
+                margin-bottom: 20px;
+              "
+            >
+              <hr style="margin-top: 2px" />
+              <p style="font-size: 16px; margin: 0; line-height: 1.6">
+                L’aspirazione è la parte del motore incaricata a far entrare la
+                miscela, aria-carburante, all'interno della camera di
+                combustione. All'inizio dell’aspirazione si trova la valvola a
+                farfalla elettronica, che ha il compito di regolare la quantità
+                di aria che entra nel motore. Più la valvola è aperta e più aria
+                entra nel motore, di conseguenza il numero di giri aumenta. Il
+                controllo della valvola a farfalla parte da un sensore montato
+                sul pedale dell'acceleratore, che comunica alla centralina
+                quanto è premuto, successivamente la centralina regola
+                l’attuatore della valvola a farfalla (nel motore F430 sono
+                presenti 2 valvole a farfalla elettroniche). Una volta che
+                l’aria è stata regolata dalla valvola, entra nel collettore
+                d'aspirazione dove alla fine di esso si trova l'iniettore, (nel
+                motore F430 sono presenti 2 collettori di aspirazione, uno per
+                bancata, che possono venire uniti da un polmone a depressione.
+                Gli iniettori sono 8, uno per cilindro).
+              </p>
+            </div>
+            <button
+              style="
+                background-color: #980000;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                font-weight: 600;
+              "
+            >
+              Scopri di più
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="foto-container">
+        <!-- Descrizione prodotto -->
+        <div
+          class="group-card"
+          onclick="toggleDescription('description10')"
+          style="
+            cursor: pointer;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+          "
+        >
+          <img
+            src="./Assets/img/Sensore_di_giri.jpg"
+            alt="Foto Ferrari 1"
+            width="100%"
+            style="border-radius: 15px 15px 0 0"
+            id="sensoredigiri"
+          />
+          <div style="padding: 20px">
+            <h2 style="margin: 0 0 10px">Sensore di giri</h2>
+            <div
+              id="description10"
+              style="
+                height: 0;
+                overflow: hidden;
+                transition: height 0.5s ease;
+                margin-bottom: 20px;
+              "
+            >
+              <hr style="margin-top: 2px" />
+              <p style="font-size: 16px; margin: 0; line-height: 1.6">
+                L’aspirazione è la parte del motore incaricata a far entrare la
+                miscela, aria-carburante, all'interno della camera di
+                combustione. All'inizio dell’aspirazione si trova la valvola a
+                farfalla elettronica, che ha il compito di regolare la quantità
+                di aria che entra nel motore. Più la valvola è aperta e più aria
+                entra nel motore, di conseguenza il numero di giri aumenta. Il
+                controllo della valvola a farfalla parte da un sensore montato
+                sul pedale dell'acceleratore, che comunica alla centralina
+                quanto è premuto, successivamente la centralina regola
+                l’attuatore della valvola a farfalla (nel motore F430 sono
+                presenti 2 valvole a farfalla elettroniche). Una volta che
+                l’aria è stata regolata dalla valvola, entra nel collettore
+                d'aspirazione dove alla fine di esso si trova l'iniettore, (nel
+                motore F430 sono presenti 2 collettori di aspirazione, uno per
+                bancata, che possono venire uniti da un polmone a depressione.
+                Gli iniettori sono 8, uno per cilindro).
+              </p>
+            </div>
+            <button
+              style="
+                background-color: #980000;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                font-weight: 600;
+              "
+            >
+              Scopri di più
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <button id="bottom-right-button" onclick="scrollToHeader()">
+      <div style="display: flex; align-items: center; width: auto">
+        <span class="material-symbols-outlined"> expand_less </span>
+      </div>
+    </button>
+
+    <!-- Sezione Footer -->
+    <footer
+      id="footer"
+      style="background-color: #000000; color: white; padding: 20px"
+    >
+      <img
+        src="./Assets/img/LogoScuola.png"
+        width="200px"
+        height="auto"
+        style="width: 100%"
+      />
+      <div class="contatti" style="margin-bottom: 20px">
+        <h3 style="margin: 0 0 10px; font-size: 24px">Contattaci</h3>
+        <p style="margin: 0; font-size: 18px">
+          Via Alfredo Dino Ferrari, 2, 41053 Maranello MO
+        </p>
+        <p style="margin: 0; font-size: 18px">
+          Email: mois017006@istruzione.it
+        </p>
+        <p style="margin: 0; font-size: 18px">Tel: +39 0536 941233</p>
+      </div>
+
+      <div class="social" style="text-align: center">
+        <h3
+          style="
+            margin-bottom: 20px;
+            font-size: 24px;
+            padding: 10px;
+            background-color: #980000;
+            border-radius: 10px;
+            margin-bottom: 0px;
+          "
+        >
+          <a
+            href="https://www.ferrari.edu.it/"
+            style="
+              text-decoration: none;
+              color: white;
+              margin-right: 20px;
+              font-size: 24px;
+            "
+          >
+            Vienici a trovare
+          </a>
+        </h3>
+      </div>
+    </footer>
+
+    <script>
+      // Funzione per mostrare/nascondere la descrizione con animazione di transizione
+      function toggleDescription(descriptionId) {
+        var description = document.getElementById(descriptionId);
+        if (description.style.height === "0px") {
+          description.style.height = description.scrollHeight + "px";
+        } else {
+          description.style.height = "0px";
+        }
+      }
+
+      function scrollToFooter() {
+        var footer = document.getElementById("footer");
+        footer.scrollIntoView({ behavior: "smooth" });
+      }
+
+      var buttonVisible = false; // Variabile per tenere traccia della visibilità del bottone fisso
+
+      // Funzione per mostrare il bottone fisso
+      function showButton() {
+        var button = document.getElementById("bottom-right-button");
+        if (!buttonVisible) {
+          button.style.display = "block";
+          buttonVisible = true; // Imposta la variabile a true una volta che il bottone è visibile
+        }
+      }
+
+      // Funzione per nascondere il bottone fisso
+      function hideButton() {
+        var button = document.getElementById("bottom-right-button");
+        if (buttonVisible) {
+          button.style.display = "none";
+          buttonVisible = false; // Imposta la variabile a false quando il bottone è nascosto
+        }
+      }
+
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        var main = document.querySelector("main");
+        var button = document.getElementById("bottom-right-button");
+        var headerHeight = header.offsetHeight; // Altezza dell'header
+
+        var distanceFromTop = main.getBoundingClientRect().top; // Distanza dall'inizio della finestra visualizzata
+        if (distanceFromTop < headerHeight) {
+          showButton(); // Mostra il bottone quando la distanza supera l'altezza dell'header
+        } else {
+          hideButton(); // Nascondi il bottone altrimenti
+        }
+
+        var distance = main.getBoundingClientRect().top; // Distanza dall'inizio della finestra visualizzata
+        if (distance < 0) {
+          button.style.right = "20px"; // Cambia la posizione del bottone quando la sezione main è superata
+        } else {
+          button.style.right = "-100px"; // Nascondi il bottone altrimenti
+        }
+      });
+
+      function scrollToHeader() {
+        var header = document.querySelector("header");
+        header.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+  </body>
+</html>
