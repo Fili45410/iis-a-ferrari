@@ -106,3 +106,19 @@ footer h3 {
 .collegamenti a:hover {
   text-decoration: underline;
 }
+
+/* Aggiungi un'animazione per far apparire gradualmente l'immagine */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Applica l'animazione all'elemento che contiene le immagini */
+.foto-container img {
+  animation: fadeIn 2.5s ease forwards;
+  opacity: 0; /* Imposta l'opacità iniziale a 0 */
+}
