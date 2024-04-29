@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Homepage | Ferrari F430</title>
-    <link
-      rel="icon"
-      type="image/png"
-      href="./Assets/img/schools.webp"
-    />
+    <link rel="icon" type="image/png" href="./Assets/img/schools.webp" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -18,15 +14,6 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
@@ -34,6 +21,16 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="./Assets/css/style.css" />
   </head>
@@ -78,7 +75,7 @@
             <span class="material-symbols-outlined"> star </span>
           </button>
         </a>
-        <button title="Componentistica">
+        <button title="Componentistica" onclick="scrollToMotore()">
           <span class="material-symbols-outlined">
             precision_manufacturing
           </span>
@@ -88,9 +85,7 @@
         </button>
       </div>
     </header>
-    <section>
 
-    </section>
     <div
       id="Presentation"
       style="background-color: lightgrey; padding: 20px; text-align: center"
@@ -101,7 +96,7 @@
           font-weight: bold;
           text-transform: uppercase;
           color: #333;
-          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          font-family: 'Oswald', sans-serif;
           margin: 0px;
         "
       >
@@ -113,13 +108,14 @@
           line-height: 1.6;
           color: #555555;
           font-style: italic;
+          font-family: 'Rubik', sans-serif;
         "
       >
-        Il cuore della Ferrari F430, il motore F136E, è un V8 di 90° con
-        monoblocco e testate in lega di alluminio. Questa unità, rispetto al
-        predecessore montato sulla Ferrari 360, offre notevoli miglioramenti:
-        una cilindrata maggiorata a 4308 cc, un peso ridotto di circa 4 kg e
-        prestazioni notevolmente migliorate. <br />
+        Il cuore della Ferrari F430, motore F136E, è un V8 di 90° con monoblocco
+        e testate in lega di alluminio. Questa unità, rispetto al predecessore
+        montato sulla Ferrari 360, offre notevoli miglioramenti: una cilindrata
+        maggiorata a 4308 cc, un peso ridotto di circa 4 kg e prestazioni
+        notevolmente migliorate. <br />
         <br />
         La coppia aumenta del 25% a 465 Nm a 5250 giri/min, mentre la potenza
         sale del 23% a 490 CV a 8500 giri/min. La distribuzione a 4 valvole per
@@ -138,7 +134,23 @@
       />
     </div>
 
-    <main style="padding: 20px">
+    <main style="padding: 20px" id="scopri-motore">
+      <h2
+        style="
+          font-size: 30px;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: #333;
+          font-family: 'Oswald', sans-serif;
+          margin: 10px 0px 10px 0px;
+          text-align: center;
+          border-bottom: 1px solid darkgrey;
+          padding-bottom: 10px;
+        "
+      >
+        SCOPRI IL MOTORE F136E
+      </h2>
+
       <div class="foto-container">
         <!-- Descrizione prodotto -->
         <div
@@ -160,7 +172,7 @@
             id="sistemaspirazione"
           />
           <div style="padding: 20px">
-            <h2 style="margin: 0 0 10px">Sistema di Aspirazione</h2>
+            <h2 style="margin: 0 0 10px">Valvola a Farfalla Motorizzata</h2>
             <div
               id="description1"
               style="
@@ -171,23 +183,47 @@
               "
             >
               <hr style="margin-top: 2px" />
-              <p style="font-size: 16px; margin: 0; line-height: 1.6">
-                L’aspirazione è la parte del motore incaricata a far entrare la
-                miscela, aria-carburante, all'interno della camera di
-                combustione. All'inizio dell’aspirazione si trova la valvola a
-                farfalla elettronica, che ha il compito di regolare la quantità
-                di aria che entra nel motore. Più la valvola è aperta e più aria
-                entra nel motore, di conseguenza il numero di giri aumenta. Il
-                controllo della valvola a farfalla parte da un sensore montato
-                sul pedale dell'acceleratore, che comunica alla centralina
-                quanto è premuto, successivamente la centralina regola
-                l’attuatore della valvola a farfalla (nel motore F430 sono
-                presenti 2 valvole a farfalla elettroniche). Una volta che
-                l’aria è stata regolata dalla valvola, entra nel collettore
-                d'aspirazione dove alla fine di esso si trova l'iniettore, (nel
-                motore F430 sono presenti 2 collettori di aspirazione, uno per
-                bancata, che possono venire uniti da un polmone a depressione.
-                Gli iniettori sono 8, uno per cilindro).
+              <p
+                style="
+                  font-size: 16px;
+                  margin: 0;
+                  line-height: 1.6;
+                  font-family: 'Rubik', sans-serif;
+                "
+              >
+                La valvola a farfalla motorizzata è un componente essenziale del
+                sistema di gestione dell'aria nel motore della Ferrari F430.
+                Questa valvola regola il flusso d'aria che entra nel motore,
+                influenzando direttamente la quantità di aria disponibile per la
+                combustione e, di conseguenza, le prestazioni del motore. Ecco
+                una spiegazione dettagliata del suo funzionamento:
+                <ul style="display:flex; flex-direction: column; gap: 10px">
+                  <li><div>Posizione e struttura:</div>La valvola a farfalla motorizzata si trova all'interno del collettore di aspirazione,
+                     vicino alla bocca dell'aria. È costituita da una farfalla metallica montata su un albero 
+                     che può essere azionato da un motore elettrico o da un servomotore.
+                    </li>
+                    <li>
+                      <div>Regolazione del flusso d'aria:</div>La valvola a farfalla motorizzata regola il flusso d'aria che entra nel motore.
+                      Quando la farfalla è completamente aperta, consente il massimo flusso d'aria, ottimizzando le prestazioni del motore a regimi elevati. 
+                      Al contrario, quando la farfalla è completamente chiusa, limita il flusso d'aria, riducendo il consumo di carburante 
+                      e le emissioni a regimi di marcia più bassi o in fase di decelerazione.
+                    </li>
+                    <li>
+                      <div> Controllo elettronico:</div> Il movimento della valvola a farfalla è controllato elettronicamente dall'unità di controllo del motore (ECU) in base a una serie di fattori, 
+                      come la posizione dell'acceleratore, la velocità del motore, il carico e le condizioni di guida.
+                      L'ECU elabora queste informazioni e invia segnali al motore elettrico o al servomotore per posizionare la farfalla nel modo più appropriato.
+                    </li>
+                    <li>
+                      <div>Adattamento dinamico:</div> La valvola a farfalla motorizzata consente un adattamento dinamico del flusso d'aria in base 
+                      alle esigenze del motore in diverse situazioni di guida. Ciò contribuisce a ottimizzare le prestazioni, l'efficienza del combustibile
+                      e le emissioni del veicolo.
+                    </li>
+                    <li>
+                      <div>Prestazioni ottimali:</div> Regolando accuratamente il flusso d'aria, la valvola a farfalla motorizzata contribuisce a garantire 
+                      che il motore funzioni alle migliori prestazioni in ogni momento, offrendo una risposta dell'acceleratore rapida
+                      e una potenza uniforme su tutta la gamma di regimi.
+                    </li>
+                </ul>
               </p>
             </div>
             <button
@@ -229,7 +265,7 @@
             id="sistemacommonrail"
           />
           <div style="padding: 20px">
-            <h2 style="margin: 0 0 10px">Sistema common rail</h2>
+            <h2 style="margin: 0 0 10px">Sistema di Iniezione</h2>
             <div
               id="description2"
               style="
@@ -240,24 +276,48 @@
               "
             >
               <hr style="margin-top: 2px" />
-              <p style="font-size: 16px; margin: 0; line-height: 1.6">
-                L’aspirazione è la parte del motore incaricata a far entrare la
-                miscela, aria-carburante, all'interno della camera di
-                combustione. All'inizio dell’aspirazione si trova la valvola a
-                farfalla elettronica, che ha il compito di regolare la quantità
-                di aria che entra nel motore. Più la valvola è aperta e più aria
-                entra nel motore, di conseguenza il numero di giri aumenta. Il
-                controllo della valvola a farfalla parte da un sensore montato
-                sul pedale dell'acceleratore, che comunica alla centralina
-                quanto è premuto, successivamente la centralina regola
-                l’attuatore della valvola a farfalla (nel motore F430 sono
-                presenti 2 valvole a farfalla elettroniche). Una volta che
-                l’aria è stata regolata dalla valvola, entra nel collettore
-                d'aspirazione dove alla fine di esso si trova l'iniettore, (nel
-                motore F430 sono presenti 2 collettori di aspirazione, uno per
-                bancata, che possono venire uniti da un polmone a depressione.
-                Gli iniettori sono 8, uno per cilindro).
-              </p>
+              <p
+              style="
+                font-size: 16px;
+                margin: 0;
+                line-height: 1.6;
+                font-family: 'Rubik', sans-serif;
+              "
+            >
+              Il sistema di iniezione nel motore della Ferrari F430 è un componente fondamentale per la combustione del carburante all'interno dei cilindri. 
+              Questo sistema è progettato per fornire la giusta quantità di carburante al motore in base alle condizioni di guida, al carico del motore e ad altri parametri operativi.
+               Ecco una spiegazione dettagliata del suo funzionamento:
+
+              <ul style="display:flex; flex-direction: column; gap: 10px">
+                <li><div>Posizione e struttura:</div> Il sistema di iniezione si trova all'interno della camera di combustione di ogni cilindro del motore. 
+                  È costituito da una serie di iniettori di carburante, che sono dispositivi che spruzzano il carburante direttamente nella camera di combustione.
+                  </li>
+                  <li>
+                    <div>Controllo elettronico:</div>Il sistema di iniezione è controllato da un'unità di controllo del motore (ECU) che elabora
+                     i segnali provenienti da vari sensori del motore, come i sensori di temperatura dell'aria, di temperatura del liquido refrigerante, 
+                    di posizione dell'acceleratore, di ossigeno nell'aria di scarico e altri, per determinare la quantità di carburante da iniettare in ogni cilindro.
+                  </li>
+                  <li>
+                    <div> Regolazione della quantità di carburante:</div> L'ECU utilizza queste informazioni per calcolare il tempo e la durata dell'iniezione 
+                    di carburante necessari per ottenere la miscela aria-carburante ottimale per la combustione. 
+                    Questa miscela deve essere correttamente bilanciata per garantire una combustione completa e efficiente, riducendo al minimo le emissioni nocive.
+                  </li>
+                  <li>
+                    <div>Iniezione diretta o indiretta:</div> La Ferrari F430 utilizza un sistema di iniezione diretta, dove il carburante viene iniettato direttamente nella camera di combustione. 
+                    Questo consente un controllo più preciso del processo di 
+                    combustione e una maggiore efficienza del motore rispetto ai sistemi di iniezione indiretta, dove il carburante viene iniettato nel collettore di aspirazione.
+                  </li>
+                  <li>
+                    <div>Adattamento dinamico:</div> Il sistema di iniezione è in grado di adattarsi dinamicamente alle varie condizioni di guida, regolando la quantità di carburante 
+                    iniettato in base alla velocità del motore, alla posizione dell'acceleratore, al carico del motore, alla temperatura e ad altri fattori.
+                  </li>
+                  <li>
+                    <div>Prestazioni ottimali:</div> Un sistema di iniezione ben progettato e gestito contribuisce a 
+                    garantire prestazioni ottimali del motore, fornendo la giusta quantità di carburante al momento giusto 
+                    per massimizzare la potenza, l'efficienza del combustibile e la riduzione delle emissioni.
+                  </li>
+              </ul>
+            </p>
             </div>
             <button
               style="
@@ -308,24 +368,45 @@
               "
             >
               <hr style="margin-top: 2px" />
-              <p style="font-size: 16px; margin: 0; line-height: 1.6">
-                L’aspirazione è la parte del motore incaricata a far entrare la
-                miscela, aria-carburante, all'interno della camera di
-                combustione. All'inizio dell’aspirazione si trova la valvola a
-                farfalla elettronica, che ha il compito di regolare la quantità
-                di aria che entra nel motore. Più la valvola è aperta e più aria
-                entra nel motore, di conseguenza il numero di giri aumenta. Il
-                controllo della valvola a farfalla parte da un sensore montato
-                sul pedale dell'acceleratore, che comunica alla centralina
-                quanto è premuto, successivamente la centralina regola
-                l’attuatore della valvola a farfalla (nel motore F430 sono
-                presenti 2 valvole a farfalla elettroniche). Una volta che
-                l’aria è stata regolata dalla valvola, entra nel collettore
-                d'aspirazione dove alla fine di esso si trova l'iniettore, (nel
-                motore F430 sono presenti 2 collettori di aspirazione, uno per
-                bancata, che possono venire uniti da un polmone a depressione.
-                Gli iniettori sono 8, uno per cilindro).
-              </p>
+              <p
+              style="
+                font-size: 16px;
+                margin: 0;
+                line-height: 1.6;
+                font-family: 'Rubik', sans-serif;
+              "
+            >
+            L'attuatore del gruppo farfallato nella Ferrari F430 è un componente essenziale del sistema di gestione dell'aria del motore. 
+            Questo componente è responsabile di regolare l'apertura delle farfalle all'interno del collettore di aspirazione, 
+            controllando così il flusso d'aria che entra nel motore. Ecco una spiegazione dettagliata del suo funzionamento:
+
+              <ul style="display:flex; flex-direction: column; gap: 10px">
+                <li><div>Posizione e struttura:</div> L'attuatore del gruppo farfallato è montato direttamente sul collettore di aspirazione del motore.
+                   È composto da un motore elettrico o da un servomotore collegato a un meccanismo che muove le farfalle all'interno del collettore.
+                  </li>
+                  <li>
+                    <div>Controllo elettronico:</div>L'apertura delle farfalle è controllata elettronicamente dall'unità di controllo del motore (ECU). 
+                    Quest'ultima elabora le informazioni provenienti da vari sensori del motore, come il sensore di posizione dell'acceleratore, 
+                    la velocità del motore, il carico e altre variabili, per determinare la quantità di aria necessaria in base alle condizioni di guida.
+                  </li>
+                  <li>
+                    <div> Regolazione del flusso d'aria:</div> n base ai segnali ricevuti dall'ECU, l'attuatore del gruppo farfallato
+                    muove le farfalle all'interno del collettore di aspirazione per regolare il flusso d'aria che entra nel motore.
+                    Quando l'acceleratore viene premuto, l'ECU può comandare l'attuatore per aprire completamente le farfalle
+                    per consentire un maggiore flusso d'aria e una migliore risposta dell'acceleratore.
+                  </li>
+                  <li>
+                    <div>Adattamento dinamico:</div> L'attuatore del gruppo farfallato è in grado di adattarsi dinamicamente alle varie condizioni di guida e al carico del motore,
+                     regolando l'apertura delle farfalle di conseguenza. Ciò consente di ottimizzare le prestazioni del motore, 
+                     l'efficienza del combustibile e le emissioni in base alle esigenze del momento.
+                  </li>
+                  <li>
+                    <div>Prestazioni ottimali:</div> Un funzionamento preciso e affidabile dell'attuatore del gruppo farfallato
+                    è essenziale per garantire prestazioni ottimali del motore. Un controllo accurato del flusso d'aria contribuisce a massimizzare la potenza del motore,
+                     migliorare l'efficienza del combustibile e ridurre le emissioni nocive.
+                  </li>
+              </ul>
+            </p>
             </div>
             <button
               style="
@@ -366,7 +447,7 @@
             id="scambiatoridicalore"
           />
           <div style="padding: 20px">
-            <h2 style="margin: 0 0 10px">Scambiatori di calore</h2>
+            <h2 style="margin: 0 0 10px">Scambiatori di calore olio motore, olio del cambio</h2>
             <div
               id="description4"
               style="
@@ -377,24 +458,45 @@
               "
             >
               <hr style="margin-top: 2px" />
-              <p style="font-size: 16px; margin: 0; line-height: 1.6">
-                L’aspirazione è la parte del motore incaricata a far entrare la
-                miscela, aria-carburante, all'interno della camera di
-                combustione. All'inizio dell’aspirazione si trova la valvola a
-                farfalla elettronica, che ha il compito di regolare la quantità
-                di aria che entra nel motore. Più la valvola è aperta e più aria
-                entra nel motore, di conseguenza il numero di giri aumenta. Il
-                controllo della valvola a farfalla parte da un sensore montato
-                sul pedale dell'acceleratore, che comunica alla centralina
-                quanto è premuto, successivamente la centralina regola
-                l’attuatore della valvola a farfalla (nel motore F430 sono
-                presenti 2 valvole a farfalla elettroniche). Una volta che
-                l’aria è stata regolata dalla valvola, entra nel collettore
-                d'aspirazione dove alla fine di esso si trova l'iniettore, (nel
-                motore F430 sono presenti 2 collettori di aspirazione, uno per
-                bancata, che possono venire uniti da un polmone a depressione.
-                Gli iniettori sono 8, uno per cilindro).
-              </p>
+              <p
+              style="
+                font-size: 16px;
+                margin: 0;
+                line-height: 1.6;
+                font-family: 'Rubik', sans-serif;
+              "
+            >
+            Gli scambiatori di calore per l'olio motore e l'olio del cambio nella Ferrari F430 sono componenti essenziali del sistema di raffreddamento dei fluidi del motore.
+            Questi scambiatori consentono il trasferimento di calore dall'olio al liquido di raffreddamento (solitamente acqua o liquido refrigerante) o all'aria esterna, contribuendo a mantenere le 
+            temperature dei fluidi entro limiti accettabili e garantendo prestazioni ottimali del motore e del cambio. Ecco una spiegazione dettagliata del loro funzionamento:
+
+              <ul style="display:flex; flex-direction: column; gap: 10px">
+                <li><div>Posizione e struttura:</div> Gli scambiatori di calore per l'olio motore e l'olio del cambio sono montati in prossimità dei componenti pertinenti del motore, come il motore stesso o il cambio. 
+                  Sono costituiti da un insieme di tubi o canali attraverso i quali passano l'olio motore o l'olio del cambio e il liquido di raffreddamento o l'aria.
+                  </li>
+                  <li>
+                    <div>Trasferimento di calore:</div>Quando il veicolo è in funzione, l'olio motore e l'olio del cambio tendono ad aumentare
+                    la temperatura a causa del calore generato dal funzionamento del motore e del cambio.
+                    Gli scambiatori di calore facilitano il trasferimento di calore dall'olio al liquido di raffreddamento o all'aria esterna, consentendo il raffreddamento degli oli.
+                  </li>
+                  <li>
+                    <div> Flusso dei fluidi:</div> Gli scambiatori di calore sono progettati in modo che l'olio e il liquido di raffreddamento 
+                    o l'aria scorra attraverso i canali in direzioni opposte. 
+                    Questo crea una differenza di temperatura tra i due fluidi, 
+                    consentendo il trasferimento di calore dall'olio al liquido di raffreddamento o all'aria.
+                  </li>
+                  <li>
+                    <div>Mantenimento delle temperature ottimali:</div> Mantenendo le temperature dell'olio motore e dell'olio del cambio entro limiti accettabili,
+                    gli scambiatori di calore contribuiscono a proteggere i componenti del motore e del cambio dall'eccessivo surriscaldamento, 
+                    prolungando la loro durata e assicurando prestazioni ottimali.
+                  </li>
+                  <li>
+                    <div>Efficienza del sistema di raffreddamento:</div> Un sistema di raffreddamento efficace è essenziale per garantire il corretto funzionamento del motore e del cambio. Gli scambiatori di calore svolgono
+                    un ruolo cruciale nel garantire che gli oli siano mantenuti alla temperatura corretta, 
+                    contribuendo così all'efficienza complessiva del sistema di raffreddamento.
+                  </li>
+              </ul>
+            </p>
             </div>
             <button
               style="
@@ -446,24 +548,41 @@
               "
             >
               <hr style="margin-top: 2px" />
-              <p style="font-size: 16px; margin: 0; line-height: 1.6">
-                L’aspirazione è la parte del motore incaricata a far entrare la
-                miscela, aria-carburante, all'interno della camera di
-                combustione. All'inizio dell’aspirazione si trova la valvola a
-                farfalla elettronica, che ha il compito di regolare la quantità
-                di aria che entra nel motore. Più la valvola è aperta e più aria
-                entra nel motore, di conseguenza il numero di giri aumenta. Il
-                controllo della valvola a farfalla parte da un sensore montato
-                sul pedale dell'acceleratore, che comunica alla centralina
-                quanto è premuto, successivamente la centralina regola
-                l’attuatore della valvola a farfalla (nel motore F430 sono
-                presenti 2 valvole a farfalla elettroniche). Una volta che
-                l’aria è stata regolata dalla valvola, entra nel collettore
-                d'aspirazione dove alla fine di esso si trova l'iniettore, (nel
-                motore F430 sono presenti 2 collettori di aspirazione, uno per
-                bancata, che possono venire uniti da un polmone a depressione.
-                Gli iniettori sono 8, uno per cilindro).
-              </p>
+              <p
+              style="
+                font-size: 16px;
+                margin: 0;
+                line-height: 1.6;
+                font-family: 'Rubik', sans-serif;
+              "
+            >
+            La valvola termostatica è un componente cruciale del sistema di raffreddamento della Ferrari F430.
+            Il suo compito principale è quello di regolare la temperatura del liquido refrigerante del motore,
+            garantendo che il motore funzioni alla temperatura ottimale di esercizio.<br/><br/>
+            Ecco come funziona la valvola termostatica nella Ferrari F430:
+
+
+              <ul style="display:flex; flex-direction: column; gap: 10px">
+                <li><div>Regolazione della temperatura:</div> La valvola termostatica si trova nel percorso del liquido refrigerante tra il motore e il radiatore. 
+                  Quando il motore è freddo, la valvola termostatica è chiusa, 
+                  costringendo il liquido refrigerante a circolare solo nel motore stesso, consentendo al motore di raggiungere rapidamente la temperatura di esercizio ottimale.
+                  </li>
+                  <li>
+                    <div>Apertura:</div>Una volta che il motore raggiunge la temperatura di esercizio desiderata, la valvola termostatica si apre per consentire al liquido refrigerante di circolare anche attraverso il radiatore. 
+                    Questo consente al liquido refrigerante di assorbire il calore dal motore e di essere raffreddato 
+                    dal radiatore prima di essere nuovamente pompato nel motore.
+                  </li>
+                  <li>
+                    <div> Mantenimento della temperatura:</div> La valvola termostatica si apre e si chiude continuamente in 
+                    risposta alle variazioni di temperatura del motore, garantendo che la temperatura del 
+                    liquido refrigerante sia mantenuta entro i limiti ottimali di funzionamento.
+                  </li>
+                  <li>
+                    <div>Efficienza del motore:</div> Mantenendo il motore alla temperatura di esercizio corretta, la valvola termostatica contribuisce
+                    ad ottimizzare l'efficienza del motore e a migliorare le prestazioni complessive del veicolo.
+                  </li>
+              </ul>
+            </p>
             </div>
             <button
               style="
@@ -504,7 +623,7 @@
             id="tendicatenaidraulici"
           />
           <div style="padding: 20px">
-            <h2 style="margin: 0 0 10px">Tendi catena idraulici</h2>
+            <h2 style="margin: 0 0 10px">Tendi Catena Idraulici</h2>
             <div
               id="description6"
               style="
@@ -515,24 +634,39 @@
               "
             >
               <hr style="margin-top: 2px" />
-              <p style="font-size: 16px; margin: 0; line-height: 1.6">
-                L’aspirazione è la parte del motore incaricata a far entrare la
-                miscela, aria-carburante, all'interno della camera di
-                combustione. All'inizio dell’aspirazione si trova la valvola a
-                farfalla elettronica, che ha il compito di regolare la quantità
-                di aria che entra nel motore. Più la valvola è aperta e più aria
-                entra nel motore, di conseguenza il numero di giri aumenta. Il
-                controllo della valvola a farfalla parte da un sensore montato
-                sul pedale dell'acceleratore, che comunica alla centralina
-                quanto è premuto, successivamente la centralina regola
-                l’attuatore della valvola a farfalla (nel motore F430 sono
-                presenti 2 valvole a farfalla elettroniche). Una volta che
-                l’aria è stata regolata dalla valvola, entra nel collettore
-                d'aspirazione dove alla fine di esso si trova l'iniettore, (nel
-                motore F430 sono presenti 2 collettori di aspirazione, uno per
-                bancata, che possono venire uniti da un polmone a depressione.
-                Gli iniettori sono 8, uno per cilindro).
-              </p>
+              <p
+              style="
+                font-size: 16px;
+                margin: 0;
+                line-height: 1.6;
+                font-family: 'Rubik', sans-serif;
+              "
+            >
+            Il tendicatena idraulico della Ferrari F430 è un componente fondamentale del sistema di distribuzione del motore. 
+            La sua funzione principale è mantenere la corretta tensione sulla catena di distribuzione, che a sua volta controlla 
+            l'apertura e la chiusura delle valvole del motore in sincronia con il movimento dei pistoni. Ecco una spiegazione dettagliata del funzionamento:
+
+              <ul style="display:flex; flex-direction: column; gap: 10px">
+                <li><div>Posizione e struttura:</div> Il tendicatena idraulico si trova nella parte superiore del motore, di solito vicino alla testata dei cilindri. 
+                  È costituito da un cilindro idraulico contenente un pistone che è collegato meccanicamente 
+                  alla catena di distribuzione. All'interno del cilindro c'è un fluido idraulico che può essere compresso.
+                  </li>
+                  <li>
+                    <div>Regolazione della tensione:</div>Il tendicatena idraulico regola automaticamente la tensione della catena di distribuzione in risposta alle variazioni 
+                    di tensione causate dall'usura della catena stessa o dalle variazioni di temperatura o pressione dell'olio. 
+                    Quando la tensione sulla catena diminuisce, il pistone all'interno del cilindro si muove per compensare, 
+                    mantenendo così la tensione ottimale sulla catena.
+                  </li> 
+                  <li>
+                    <div> Controllo e monitoraggio:</div> Il sistema di controllo del motore monitora costantemente la tensione della catena di distribuzione tramite sensori dedicati. 
+                    Se viene rilevata una variazione significativa nella tensione, il sistema può attivare il tendicatena idraulico per regolare immediatamente la tensione della catena.
+                  </li>
+                  <li>
+                    <div>Lubrificazione:</div> È essenziale che il fluido idraulico all'interno del tendicatena idraulico sia pulito e lubrificato per garantire un funzionamento corretto e affidabile. 
+                    La Ferrari F430 utilizza un sistema di lubrificazione apposito per mantenere il tendicatena idraulico alimentato con fluido idraulico pulito.
+                  </li>
+              </ul>
+            </p>
             </div>
             <button
               style="
@@ -583,24 +717,44 @@
               "
             >
               <hr style="margin-top: 2px" />
-              <p style="font-size: 16px; margin: 0; line-height: 1.6">
-                L’aspirazione è la parte del motore incaricata a far entrare la
-                miscela, aria-carburante, all'interno della camera di
-                combustione. All'inizio dell’aspirazione si trova la valvola a
-                farfalla elettronica, che ha il compito di regolare la quantità
-                di aria che entra nel motore. Più la valvola è aperta e più aria
-                entra nel motore, di conseguenza il numero di giri aumenta. Il
-                controllo della valvola a farfalla parte da un sensore montato
-                sul pedale dell'acceleratore, che comunica alla centralina
-                quanto è premuto, successivamente la centralina regola
-                l’attuatore della valvola a farfalla (nel motore F430 sono
-                presenti 2 valvole a farfalla elettroniche). Una volta che
-                l’aria è stata regolata dalla valvola, entra nel collettore
-                d'aspirazione dove alla fine di esso si trova l'iniettore, (nel
-                motore F430 sono presenti 2 collettori di aspirazione, uno per
-                bancata, che possono venire uniti da un polmone a depressione.
-                Gli iniettori sono 8, uno per cilindro).
-              </p>
+              <p
+              style="
+                font-size: 16px;
+                margin: 0;
+                line-height: 1.6;
+                font-family: 'Rubik', sans-serif;
+              "
+            >
+            Il sistema di lubrificazione della Ferrari F430 è fondamentale per garantire il corretto funzionamento del motore ad alte prestazioni. Ecco una panoramica dettagliata di come funziona:
+
+              <ul style="display:flex; flex-direction: column; gap: 10px">
+                <li><div>Serbatoio dell'olio:</div> La F430 è equipaggiata con un serbatoio dell'olio, che contiene l'olio motore necessario per lubrificare i componenti del motore.
+                  </li>
+                  <li>
+                    <div>Pompa dell'olio:</div>La pompa dell'olio è responsabile di pompare l'olio dal serbatoio attraverso il sistema di lubrificazione del motore.
+                     La pompa assicura che ci sia un flusso costante di olio ai componenti critici del motore.
+                  </li> 
+                  <li>
+                    <div> Filtro dell'olio:</div>  Il filtro dell'olio rimuove eventuali contaminanti dall'olio motore mentre circola attraverso il sistema. 
+                    Questo aiuta a mantenere l'olio pulito e a proteggere i componenti del motore da danni causati da particelle di sporco.
+                  </li>
+                  <li>
+                    <div>Canali di lubrificazione:</div> L'olio motore viene indirizzato attraverso una serie di canali di lubrificazione che portano l'olio
+                     ai punti critici del motore che richiedono lubrificazione, come cuscinetti, alberi a camme, cilindri e pistoni.
+                  </li>
+                  <li>
+                    <div>Spruzzatori di olio:</div>In alcuni motori ad alte prestazioni, come la Ferrari F430, ci possono essere anche spruzzatori di olio che dirigono un getto di olio verso parti specifiche del motore per garantire una lubrificazione più efficace, 
+                    specialmente durante condizioni di carico elevato o ad alte velocità.
+                  </li> 
+                  <li>
+                    <div> Ritorno dell'olio:</div> Dopo aver lubrificato i componenti critici del motore, l'olio ritorna al serbatoio dell'olio, completando così il ciclo di lubrificazione.
+                  </li>
+                  <li>
+                    <div>Monitoraggio:</div> La Ferrari F430 è dotata di sensori e sistemi di monitoraggio che controllano costantemente la pressione dell'olio e la temperatura, 
+                    garantendo che il sistema di lubrificazione funzioni correttamente e che i livelli di olio siano adeguati.
+                  </li>
+              </ul>
+            </p>
             </div>
             <button
               style="
@@ -640,7 +794,7 @@
             id="variatoridifase"
           />
           <div style="padding: 20px">
-            <h2 style="margin: 0 0 10px">Variatori di fase</h2>
+            <h2 style="margin: 0 0 10px">Accumulatore Variatori Di Fase Dell' Albero a Camme</h2>
             <div
               id="description8"
               style="
@@ -651,24 +805,40 @@
               "
             >
               <hr style="margin-top: 2px" />
-              <p style="font-size: 16px; margin: 0; line-height: 1.6">
-                L’aspirazione è la parte del motore incaricata a far entrare la
-                miscela, aria-carburante, all'interno della camera di
-                combustione. All'inizio dell’aspirazione si trova la valvola a
-                farfalla elettronica, che ha il compito di regolare la quantità
-                di aria che entra nel motore. Più la valvola è aperta e più aria
-                entra nel motore, di conseguenza il numero di giri aumenta. Il
-                controllo della valvola a farfalla parte da un sensore montato
-                sul pedale dell'acceleratore, che comunica alla centralina
-                quanto è premuto, successivamente la centralina regola
-                l’attuatore della valvola a farfalla (nel motore F430 sono
-                presenti 2 valvole a farfalla elettroniche). Una volta che
-                l’aria è stata regolata dalla valvola, entra nel collettore
-                d'aspirazione dove alla fine di esso si trova l'iniettore, (nel
-                motore F430 sono presenti 2 collettori di aspirazione, uno per
-                bancata, che possono venire uniti da un polmone a depressione.
-                Gli iniettori sono 8, uno per cilindro).
-              </p>
+              <p
+                  style="
+                    font-size: 16px;
+                    margin: 0;
+                    line-height: 1.6;
+                    font-family: 'Rubik', sans-serif;
+                  "
+                >
+                L'accumulatore dei variatori di fase dell'albero a camme è un componente importante all'interno del sistema di distribuzione variabile del motore. 
+                Nel caso della Ferrari F430 e di molti altri veicoli moderni, 
+                questo sistema è spesso noto come VVT (Variable Valve Timing), che consente di regolare l'apertura e la chiusura delle valvole:
+                  <ul style="display:flex; flex-direction: column; gap: 10px">
+                    <li><div>Posizione e struttura:</div>L'accumulatore dei variatori di fase è solitamente montato vicino all'albero a camme del motore. 
+                      È costituito da un serbatoio che contiene olio motore ad alta pressione e da un pistone all'interno del serbatoio.
+                      </li>
+                      <li>
+                        <div>Pressurizzazione dell'olio:</div> L'accumulatore viene pressurizzato dall'olio motore ad alta pressione proveniente dalla pompa dell'olio. 
+                        Questa pressione viene mantenuta all'interno del serbatoio dell'accumulatore.
+                      </li> 
+                      <li>
+                        <div> Regolazione della fase dell'albero a camme:</div> Quando il sistema di controllo del motore determina che è necessario regolare 
+                        la fase dell'albero a camme per ottimizzare le prestazioni o l'efficienza del motore, invia un segnale per rilasciare la pressione 
+                        all'interno dell'accumulatore. Questo permette al pistone di spostarsi, regolando così la fase dell'albero a camme.
+                      </li>
+                      <li>
+                        <div>Effetti sulla distribuzione delle valvole:</div>La regolazione della fase dell'albero a camme influisce sull'apertura e sulla chiusura delle valvole di aspirazione e scarico del motore. 
+                        Variando la fase, è possibile ottimizzare l'efficienza del motore a diverse velocità e carichi, 
+                        migliorando la coppia, la potenza e l'efficienza del combustibile.
+                      </li>
+                      <li>
+                        <div>Risposta del motore:</div>Questo sistema consente al motore di adattarsi dinamicamente alle condizioni di guida e al carico del motore, migliorando la risposta dell'acceleratore, la potenza e l'efficienza complessiva del motore.
+                      </li> 
+                  </ul>
+                </p>
             </div>
             <button
               style="
@@ -708,7 +878,7 @@
             id="sensoredifase"
           />
           <div style="padding: 20px">
-            <h2 style="margin: 0 0 10px">Sensore di fase</h2>
+            <h2 style="margin: 0 0 10px">Sensori di fase (HALL)</h2>
             <div
               id="description9"
               style="
@@ -719,24 +889,43 @@
               "
             >
               <hr style="margin-top: 2px" />
-              <p style="font-size: 16px; margin: 0; line-height: 1.6">
-                L’aspirazione è la parte del motore incaricata a far entrare la
-                miscela, aria-carburante, all'interno della camera di
-                combustione. All'inizio dell’aspirazione si trova la valvola a
-                farfalla elettronica, che ha il compito di regolare la quantità
-                di aria che entra nel motore. Più la valvola è aperta e più aria
-                entra nel motore, di conseguenza il numero di giri aumenta. Il
-                controllo della valvola a farfalla parte da un sensore montato
-                sul pedale dell'acceleratore, che comunica alla centralina
-                quanto è premuto, successivamente la centralina regola
-                l’attuatore della valvola a farfalla (nel motore F430 sono
-                presenti 2 valvole a farfalla elettroniche). Una volta che
-                l’aria è stata regolata dalla valvola, entra nel collettore
-                d'aspirazione dove alla fine di esso si trova l'iniettore, (nel
-                motore F430 sono presenti 2 collettori di aspirazione, uno per
-                bancata, che possono venire uniti da un polmone a depressione.
-                Gli iniettori sono 8, uno per cilindro).
-              </p>
+              <p
+                  style="
+                    font-size: 16px;
+                    margin: 0;
+                    line-height: 1.6;
+                    font-family: 'Rubik', sans-serif;
+                  "
+                >
+                I sensori di fase nel motore della Ferrari F430 svolgono un ruolo cruciale nel sistema di controllo del motore, aiutando a
+                 sincronizzare l'apertura e la chiusura delle valvole di aspirazione e scarico con il movimento dei pistoni. Ecco una spiegazione dettagliata del loro funzionamento:
+                  <ul style="display:flex; flex-direction: column; gap: 10px">
+                    <li><div>Posizione e ruolo:</div> I sensori di fase sono posizionati nell'alloggiamento dell'albero a camme e rilevano la posizione relativa degli alberi a camme rispetto al motore. 
+                      Queste informazioni sono essenziali 
+                      per il sistema di gestione del motore per determinare il momento ottimale per l'apertura e la chiusura delle valvole.
+                      </li>
+                      <li>
+                        <div>Rilevamento della posizione:</div>I sensori di fase utilizzano solitamente un segnale magnetico o a infrarossi per rilevare la posizione degli alberi a camme. Quando l'albero a camme ruota, 
+                        il sensore rileva i segnali generati da un disco o una serie di denti sull'albero a camme, 
+                        permettendo al sistema di calcolare con precisione la posizione dell'albero.
+                      </li> 
+                      <li>
+                        <div> Informazioni al sistema di gestione del motore:</div> I dati raccolti dai sensori di fase vengono inviati al modulo di controllo del motore (ECU), 
+                        che elabora queste informazioni insieme ad altri dati provenienti dai sensori per determinare 
+                        il momento ottimale per l'apertura e la chiusura delle valvole.
+                      </li>
+                      <li>
+                        <div>Regolazione del sistema di distribuzione variabile:</div>Nei motori dotati di sistema di distribuzione variabile (VVT), come la Ferrari F430, 
+                        i sensori di fase sono fondamentali per regolare la fase degli alberi a camme. Questo permette al sistema di adattare dinamicamente la fase degli alberi 
+                        a camme in base alle condizioni di guida e al carico del motore, migliorando l'efficienza e le prestazioni complessive del motore.
+                      </li>
+                      <li>
+                        <div>Prestazioni ottimali:</div>Grazie ai sensori di fase, il sistema di controllo del motore può sincronizzare perfettamente l'apertura 
+                        e la chiusura delle valvole con il movimento dei pistoni, garantendo una combustione efficiente e ottimizzata. 
+                        Ciò si traduce in prestazioni migliorate, maggiore potenza e riduzione delle emissioni.
+                      </li> 
+                  </ul>
+                </p>
             </div>
             <button
               style="
@@ -776,7 +965,8 @@
             id="sensoredigiri"
           />
           <div style="padding: 20px">
-            <h2 style="margin: 0 0 10px">Sensore di giri</h2>
+            <h2 style="margin: 0 0 10px">Sensori di Giri (PMS)
+            </h2>
             <div
               id="description10"
               style="
@@ -787,24 +977,44 @@
               "
             >
               <hr style="margin-top: 2px" />
-              <p style="font-size: 16px; margin: 0; line-height: 1.6">
-                L’aspirazione è la parte del motore incaricata a far entrare la
-                miscela, aria-carburante, all'interno della camera di
-                combustione. All'inizio dell’aspirazione si trova la valvola a
-                farfalla elettronica, che ha il compito di regolare la quantità
-                di aria che entra nel motore. Più la valvola è aperta e più aria
-                entra nel motore, di conseguenza il numero di giri aumenta. Il
-                controllo della valvola a farfalla parte da un sensore montato
-                sul pedale dell'acceleratore, che comunica alla centralina
-                quanto è premuto, successivamente la centralina regola
-                l’attuatore della valvola a farfalla (nel motore F430 sono
-                presenti 2 valvole a farfalla elettroniche). Una volta che
-                l’aria è stata regolata dalla valvola, entra nel collettore
-                d'aspirazione dove alla fine di esso si trova l'iniettore, (nel
-                motore F430 sono presenti 2 collettori di aspirazione, uno per
-                bancata, che possono venire uniti da un polmone a depressione.
-                Gli iniettori sono 8, uno per cilindro).
-              </p>
+              <p
+              style="
+                font-size: 16px;
+                margin: 0;
+                line-height: 1.6;
+                font-family: 'Rubik', sans-serif;
+              "
+            >
+            I sensori di giri nel motore della Ferrari F430 sono dispositivi fondamentali per monitorare la velocità di rotazione del motore. 
+            Questi sensori forniscono informazioni vitali al sistema di gestione del motore (ECU) per controllare il funzionamento del motore in modo preciso e ottimale.
+              <ul style="display:flex; flex-direction: column; gap: 10px">
+                <li><div>Posizione e ruolo:</div>  I sensori di giri, anche noti come sensori di velocità del motore o sensori di albero motore, 
+                  sono solitamente posizionati in prossimità del volano o del pignone dell'albero motore. 
+                  Essi rilevano la velocità di rotazione dell'albero motore e trasmettono queste informazioni all'ECU.
+                  </li>
+                  <li>
+                    <div>Rilevamento della rotazione:</div>I sensori di giri possono utilizzare diversi principi di funzionamento per rilevare la rotazione dell'albero motore. Ad esempio, possono basarsi su sensori magnetici che rilevano le variazioni magnetiche generate dai denti del volano 
+                    o dell'anello dentato sull'albero motore. Oppure possono utilizzare sensori a effetto Hall 
+                    o a induzione per rilevare le variazioni di campo magnetico generate dalla rotazione.
+                  </li> 
+                  <li>
+                    <div> Trasmissione dei dati:</div>  Una volta rilevata la rotazione dell'albero motore, i sensori di giri trasmettono queste informazioni all'ECU del motore.
+                    Questo avviene tipicamente attraverso segnali elettrici, come tensione o frequenza di impulsi, 
+                    che rappresentano la velocità di rotazione del motore.
+                  </li>
+                  <li>
+                    <div>Utilizzo dei dati:</div>L'ECU utilizza le informazioni fornite dai sensori di giri per regolare una serie di parametri critici del motore. 
+                    Questi includono il controllo dell'iniezione del carburante, l'accensione, il sistema di distribuzione variabile (se presente), 
+                    il limitatore di giri e altri aspetti del funzionamento del motore.       
+                  </li>
+                  <li>
+                    <div>Importanza per le prestazioni e l'affidabilità:</div>I sensori di giri sono fondamentali per garantire che il motore funzioni correttamente e in modo affidabile. 
+                    Forniscono dati essenziali per il controllo e 
+                    la regolazione del motore in tempo reale, consentendo prestazioni ottimali, 
+                    efficienza del combustibile e riduzione delle emissioni.
+                  </li> 
+              </ul>
+            </p>
             </div>
             <button
               style="
@@ -835,13 +1045,23 @@
       id="footer"
       style="background-color: #000000; color: white; padding: 20px"
     >
-      <img
-        src="./Assets/img/LogoScuola.webp"
-        width="200px"
-        height="auto"
-        style="width: 100%"
-      />
-      <div class="contatti" style="margin-bottom: 20px">
+      <div style="text-align: center; margin-top: 20px; margin-bottom: 20px">
+        <img
+          src="./Assets/img/LogoScuola.webp"
+          width="100px"
+          height="auto"
+          style="width: 70%"
+        />
+      </div>
+      <div
+        class="contatti"
+        style="
+          margin-bottom: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        "
+      >
         <h3 style="margin: 0 0 10px; font-size: 24px">Contattaci</h3>
         <p style="margin: 0; font-size: 18px">
           Via Alfredo Dino Ferrari, 2, 41053 Maranello MO
@@ -938,6 +1158,11 @@
       function scrollToHeader() {
         var header = document.querySelector("header");
         header.scrollIntoView({ behavior: "smooth" });
+      }
+
+      function scrollToMotore() {
+        var section = document.getElementById("scopri-motore");
+        section.scrollIntoView({ behavior: "smooth" });
       }
     </script>
   </body>
